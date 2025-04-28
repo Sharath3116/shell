@@ -4,6 +4,6 @@
 
 echo "ramehs":: hello sures, goodmorning:
 echo "ramehs" :: fuck you, ashole:
-echo "test" you ::all test , oo
+echo "test" you ::all test , oo:
 echo "hig" test :: ali, high:
-echo "sures" :: test "sures:
+echo "sures" :: test "sures":
