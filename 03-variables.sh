@@ -3,3 +3,5 @@
 Date=$(date)
 
 echo "script started at ${Date}"
+Time=$(Time)
+
