@@ -3,9 +3,9 @@
 echo "Hello Shell Script"
 
 PERSON1=Janshi
-Person2=Bheema
+PERSON2=Bheema
 
-echo $Person1 :: Hello $person2, "Good Morning"
-echo $person2 :: Tell me
-echo $Person1 :: what are you up to, $Person2
-echo $person2 :: whats your problem
+echo $PERSON1:Hello $PERSON2, "Good Morning"
+echo $PERSON2:Tell me
+echo $PERSON1:what are you up to, $PERSON2
+echo $PERSON2:whats your problem
