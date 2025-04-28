@@ -1,8 +1,8 @@
 #!/bin/bash
 
-username=$1
-password=$2
+USERNAME=$1
+PASSWORD=$2
 
-echo "username is: $username, password is: $pass"
+echo "username is: $USERNAME, password is: $PASSWORD"
 
 
