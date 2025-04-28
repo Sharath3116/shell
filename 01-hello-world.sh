@@ -1,5 +1,5 @@
+#!/bin/bash
 
-error: src refspec master does not match any
+#hello world
 
-
-error: src refspec master does not match any
+echo "Iam the champion demon to Goldman Schas"
