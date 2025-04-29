@@ -12,8 +12,7 @@ then
 else
     echo -e "$G your root user$N"
 fi
-
-yum install jjj -y
+yum install msql -y
 
 if [ $? -ne 0 ]
 then
