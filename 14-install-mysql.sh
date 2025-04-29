@@ -5,15 +5,17 @@ R="\e[31m"
 G="\e[30m"
 N="\e[0m"
 
-if [$ID -ne 0]
+if [ $ID -eq 0 ]
 
 then 
-    echo -e " you are $G root user $N proceding with install"
-    exit 1
+    echo -e "ERROR:: $R run script with root user$N"
+    exit 0
 
-else   
-    echo -e " $R stoping the script $N due to less privalage"
+else
+    echo -e "MESSAGE::$G your root user$N"
 
 fi
 
-yum install mssql -y
+yum install myiew -y
+
+ 
