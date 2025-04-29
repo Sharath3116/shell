@@ -8,7 +8,8 @@ read
 ITEM1=$Tea
 ITEM2=$Coffe
 ITEM3=$Milk
-{if 
+if 
+{
     ($read eq Tea)
     echo " Tea cost is 10/-"
     }
