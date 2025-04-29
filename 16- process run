@@ -13,3 +13,5 @@ then
     echo -e "hostname is $G $HOST $N"
     echo -e "OS version $G $OS $N"
     echo -e "Total process running on this host is  $G $PROCESS $N"
+else
+fi
