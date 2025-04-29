@@ -10,11 +10,10 @@ if [$ID -ne 0]
 then 
     echo -e " you are $G root user $N proceding with install"
     exit 1
-    
+
 else   
     echo -e " $R stoping the script $N due to less privalage"
 
+fi
 
 yum install mssql -y
-
-fi
