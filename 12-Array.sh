@@ -1,7 +1,7 @@
 
 #!/bin/bash
 
-ID=$ (id -u)
+ID=$(id -u)
 
 if [[ID -eq 0]]
 echo "user is sudo"
