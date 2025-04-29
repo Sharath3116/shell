@@ -1,17 +1,15 @@
 #!/bin/bash
+
 R="\e[31m"
 G="\e[32m"
 N="\e[0m"
-    echo -e "$R WELCOME $N TO $G DEVOPS $N"
 
-HOST= hostname
-PROCESS= ps -ef | wc -l
-OS= cat /etc/redhat-release
+echo -e "$R WELCOME $N TO $G DEVOPS$ $N"
 
-if [ &? -eq 0 ]
-then 
-    echo -e "hostname is $G $HOST $N"
-    echo -e "OS version $G $OS $N"
-    echo -e "Total process running on this host is  $G $PROCESS $N"
-else
-fi
+HOST=$(hostname)
+PROCESS=$(ps -ef | wc -l)
+OS=$(cat /etc/redhat-release)
+
+echo -e "Hostname is $G $HOST $N"
+echo -e "OS version is $G $OS $N"
+echo -e "Total processes running on this host $G $PROCESS $N"
