@@ -1,7 +1,7 @@
 #!/bin/bash
 
 ID=$(id -u)
-if [ID -eq 0]
+if [ ID -eq 0 ]
 then
     echo "YOUR ARE ROOT USER"
 else 
