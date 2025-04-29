@@ -3,12 +3,13 @@
 
 ID=$(id -u)
 
-if [[ID -eq 0]]
+if [ID -ne 0]
 
 then
     echo "user is sudo"
 else
     echo "user is not sudo"
 fi
+cd
 
 
