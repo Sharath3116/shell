@@ -4,7 +4,10 @@
 ID=$(id -u)
 
 if [[ID -eq 0]]
-echo "user is sudo"
+
+then
+    echo "user is sudo"
 else
-echo "user is not sudo"
+    echo "user is not sudo"
+if
 
