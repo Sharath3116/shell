@@ -20,12 +20,12 @@ then
 else 
     echo -e "$G Installing MY SQL is Sucess $N"
 fi
- 
+
 yum install git -y
 if [ $? -ne 0 ]
 then
     echo -e "Instaling Git $R Failed $N"
     exit 1
 else 
-    echo -e "Installing Git is $G sucess $N
+    echo -e "Installing Git is $G sucess $N"
 fi 
