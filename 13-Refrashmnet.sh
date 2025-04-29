@@ -4,7 +4,7 @@ echo "WeLcOmE to Janshi CaFe"
 echo "Following are the refrashment avalaible"
 echo "tea, milk, coffe"
 
-read iteam $i
+read -p item $i
 
 if ($i eq tea)
 {
