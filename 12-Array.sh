@@ -9,3 +9,4 @@ then
     echo "user is sudo"
 else
     echo "user is not sudo"
+fi
