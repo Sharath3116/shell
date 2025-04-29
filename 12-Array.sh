@@ -1,12 +1,12 @@
 #!/bin/bash
 
-ID=$(id -su)
+ID=$(id -u)
 if [ID -eq 0]
 then
     echo "YOUR ARE ROOT USER"
 else 
     echo "you are not rooy user"
-EXIT
+exit 1
 fi
 yum install mssql -y
 
