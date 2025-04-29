@@ -12,6 +12,7 @@ then
 else
     echo -e "$G your root user$N"
 fi
+
 yum install mysql -y > /tmp/test
 
 if [ $? -ne 0 ]
@@ -21,6 +22,22 @@ then
 else 
     echo -e "$G Installing MY SQL is Sucess $N"
 fi 
+
+yum install git -y   /tmp/test
+
+if [ $? -ne 0 ]
+then
+    echo -e "Instaling Git $R Failed $N "
+    exit 1
+else 
+    echo -e "Installing Git is $G sucess $N
+fi 
+
+
+
+
+
+
 
 
 
