@@ -20,7 +20,8 @@ then
     exit 1
 else 
     echo -e "$G Installing MY SQL is Sucess $N"
-fi
+fi 
+
 
 
 
