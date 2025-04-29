@@ -5,7 +5,8 @@ R="\e[31m"
 G="\e[30m"
 N="\e[0m"
 
-if [$ID -eq 0]
+if [$ID -ne 0]
+
 then 
     echo -e " you are $G root user $N proceding with install"
 else   
