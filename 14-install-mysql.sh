@@ -5,11 +5,11 @@ R="\e[31m"
 G="\e[30m"
 N="\e[0m"
 
-if [ $ID -eq 0 ]
+if [ $ID -ne 0 ]
 
 then 
     echo -e "ERROR:: $R run script with root user$N"
-    exit 0
+    exit 1
 
 else
     echo -e "MESSAGE::$G your root user$N"
