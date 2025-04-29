@@ -11,18 +11,18 @@ if ($i eq tea)
     echo "Tea cost is 10/-"
     }
 
-else if ($i -eq milk)
+elif ($i -eq milk)
 {
      echo "Coffe price is 15/-"
 }
 
-else if ($i -eq coffe)
+elif ($i -eq coffe)
 {
         echo "Milk price is 20/-"
 }
 else 
 
-echo "thank you"
+echo "hank you"
 
 exit 0
 fi
