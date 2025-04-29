@@ -8,15 +8,15 @@ N="\e[0m"
 if [ $ID -ne 0 ]
 
 then 
-    echo -e "ERROR:: $R run script with root user$N"
+    echo -e "run script with $R root user $N "
     exit 1
 
 else
-    echo -e "MESSAGE::$G your root user$N"
+    echo -e "$G your root user$N"
 
 fi
 
-yum install mysql -y
+yum install jjj -y
 
 if [ $? -ne 0 ]
 then
