@@ -8,17 +8,17 @@ read
 ITEM1=$Tea
 ITEM2=$Coffe
 ITEM3=$Milk
-if ($read -eq Tea)
+if ($read -eq $ITEM1)
 {
     echo " Tea cost is 10/-"
     }
 
-else if ($read -eq Coffee)
+else if ($read -eq $ITEM2)
 {
      echo "Coffe price is 15/-"
 }
 
-else if ($read -eq Milk)
+else if ($read -eq $ITEM3)
 {
         echo "Milk price is 20/-"
 }
