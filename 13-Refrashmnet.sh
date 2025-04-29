@@ -1,33 +1,19 @@
 #!/bin/bash
 
 echo "WeLcOmE to Janshi CaFe"
-echo "Fo'lowing are the refrashment avalaible"
-echo "tea, milk, coffe"
+echo "Following are the refreshments available:"
+echo "tea, milk, coffee"
 
-read -p "enter your item: " item
+read -p "Enter your item: " item
 
-if ($i eq tea); then
-{
+if [ "$item" == "tea" ]; then
     echo "Tea cost is 10/-"
-    }
-
-elif ($i -eq milk); then
-{
-     echo "Coffe price is 15/-"
-}
-
-elif ($i -eq coffe); then
-{
-        echo "Milk price is 20/-"
-}
-else 
-
-echo "hank you"
-
-exit 0
+elif [ "$item" == "milk" ]; then
+    echo "Milk price is 15/-"
+elif [ "$item" == "coffee" ]; then
+    echo "Coffee price is 20/-"
+else
+    echo "Thank you"
 fi
 
-
-
-
-
+exit 0
