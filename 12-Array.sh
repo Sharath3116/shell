@@ -1,15 +1,14 @@
-
 #!/bin/bash
 
-ID=$(id -u)
-
-if [ID -eq 1000]
-
-then
-    echo "user is sudo"
-else
-    echo "user is not sudo"
+ID=$(id -su)
+if [ID -eq 0]
+echo "YOUR ARE ROOT USER"
+else echo "you are not rooy user"
+EXIT
 fi
+yum install mssql
 
+
+ 
 
 
