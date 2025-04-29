@@ -4,7 +4,7 @@ R=".\[31"
 G=".\[32"
 N=".\[30"
 
-if (ID$ -ne 0)
+if ($ID -ne 0)
 then
     echo -e "your $G root user $N"
 else
