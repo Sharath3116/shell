@@ -16,6 +16,17 @@ else
 
 fi
 
-yum install myiew -y
+yum install mysql -y
+
+if [ $? -ne 0 ]
+then
+    echo -e "$R Instaling My SQL Failed $N"
+    exit 1
+else 
+    echo -e "$G Installing MY SQL is Sucess $N"
+
+fi
+
+
 
  
