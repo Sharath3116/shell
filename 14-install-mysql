@@ -9,8 +9,8 @@ if [$ID -eq 0]
 then 
     echo -e " you are $G root user $N proceding with install"
 else   
-    echo -e " you are $R stoping the script $N due to less privalage"
-    exit 0
+    echo -e " $R stoping the script $N due to less privalage"
+    exit 1
 
 yum install mysql -y
 
