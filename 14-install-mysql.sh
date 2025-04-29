@@ -6,14 +6,11 @@ G="\e[30m"
 N="\e[0m"
 
 if [ $ID -ne 0 ]
-
 then 
     echo -e "run script with $R root user $N "
     exit 1
-
 else
     echo -e "$G your root user$N"
-
 fi
 
 yum install jjj -y
@@ -24,7 +21,6 @@ then
     exit 1
 else 
     echo -e "$G Installing MY SQL is Sucess $N"
-
 fi
 
 
