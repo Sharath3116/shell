@@ -13,7 +13,7 @@ else
     echo -e "$G your root user$N"
 fi
 
-yum install mysql -y > /tmp/test
+yum install mysql -y > /tmp/test.log
 
 if [ $? -ne 0 ]
 then
@@ -23,8 +23,7 @@ else
     echo -e "$G Installing MY SQL is Sucess $N"
 fi 
 
-yum install git -y   /tmp/test
-
+yum install git -y  > /tmp/test.log
 if [ $? -ne 0 ]
 then
     echo -e "Instaling Git $R Failed $N "
