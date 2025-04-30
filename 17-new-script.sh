@@ -25,3 +25,12 @@ then
 else    
     echo -e "SQL install is $R Failed $N"
 fi
+
+yum install git -y &>> $LOGFILE
+
+if [ $? -eq 0 ]
+then 
+    echo -e "git install $G suecess$N"
+else
+    echo -e "git install $R Failure $N"
+fi
