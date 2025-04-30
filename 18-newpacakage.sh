@@ -26,9 +26,21 @@ else
     echo -e "YOU ARE $G ROOT USER $N"
 fi
 
-yum install dd -y &>> $LOGFILE
+yum install mysql -y &>> $LOGFILE
 
 VALIDATE $? "Installing MYSQL"
+
+yum install git -y &>> $LOGFILE
+
+VALIDATE $? "Installing git"
+
+yum install inginx -y &>> $LOGFILE
+
+VALIDATE $? "Installing inginx"
+
+
+
+
 
 
 
