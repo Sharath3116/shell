@@ -1,7 +1,9 @@
 #!/bin/bahs
 
 ID=$(id -u)
-echo -e "$0 script name"
+
+TIMESTAMP=$(TZ=IST-5:30 date +'%d/%m/%y %T %Z')
+LOGFILE="/TEMP/$0-$TIMESTAMP.log"
 
 R="\e[31m"
 G="\e[32m"
@@ -15,7 +17,7 @@ then
 else
     echo -e "$G your root user$N"
 fi
-yum install mysql -y
+yum install mysql -y &>> $LOGFILE
 
 if [ $? -eq 0 ]
 then 
