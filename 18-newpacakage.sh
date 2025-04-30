@@ -10,6 +10,7 @@ TIMESTAMP=$(date +%F-%H-%M-%S)
 LOGFILE="/tmp/$0-$TIMESTAMP.log"
 
 echo -e "$G Script Started Executing at $TIMESTAMP $N" &>> $LOGFILE
+echo -e "$G Script Started Executing at $TIMESTAMP $N"
 
 VALIDATE() {
         if [ $1 -ne 0 ]
