@@ -10,11 +10,11 @@ G="\e[32m"
 N="\e[0m"
 
 VALIDATE(){
-        if [ $? -eq 0 ]
+        if [ $1 -eq 0 ]
         then 
-            echo -e "SQL install is $G SUCESS $N"
+            echo -e "$1 install is $G SUCESS $N"
         else    
-            echo -e "SQL install is $R Failed $N"
+            echo -e "$2 install is $R Failed $N"
         fi
 }
 
