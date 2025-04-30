@@ -2,7 +2,7 @@
 
 ID=$(id -u)
 
-TIMESTAMP=$( date +'%d/%m/%y %T %Z')
+TIMESTAMP=$(date +'%d/%m/%y %T %Z')
 LOGFILE="/tmp/$0-$TIMESTAMP.log"
 
 R="\e[31m"
