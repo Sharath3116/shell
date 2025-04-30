@@ -9,7 +9,7 @@ N="\e[0m"
 TIMESTAMP=$(date +%F-%H-%M-%S)
 LOGFILE="/tmp/$0-$TIMESTAMP.log"
 VALIDATE() {
-            if [ &? -ne 0 ]
+        if [ $1 -ne 0 ]
         then 
             echo -e "Pacakage installation$R FAILED $N"
             exit 1
