@@ -1,12 +1,12 @@
 #!/bin/bahs
 
 ID=$(id -u)
+echo -e "$0 script name"
 
 R="\e[31m"
 G="\e[32m"
 N="\e[0m"
 
-#LOGFILE=
 
 if [ $ID -ne 0 ]
 then
