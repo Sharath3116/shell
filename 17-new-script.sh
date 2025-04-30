@@ -33,3 +33,4 @@ VALIDATE $? "installing mysql"
 yum install git -y &>> $LOGFILE
 
 VALIDATE $? "installing git"
+
