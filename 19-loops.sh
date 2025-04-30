@@ -28,8 +28,15 @@ else
     echo -e "Your running with $G root user $N"
 fi
 
-yum install git -y &>> LOGFILE
+for package in $@
+do
+    yum list installed $package
+    if [ $? -ne 0 ]
+    then
+        yum install $package -y
+        VALIDATE $? "Installation of $package"
+done
 
-VALIDATE $? "Installing git"
+
 
 
