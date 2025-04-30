@@ -10,7 +10,6 @@ R="\e[31m"
 G="\e[32m"
 N="\e[0m"
 
-
 if [ $ID -ne 0 ]
 then
     echo -e "Error:: run the script with $R root user $N"
@@ -18,8 +17,7 @@ then
 else
     echo -e "$G your root user$N"
 fi
-
-yum install mysql -y &>> $LOGFILE
+yum install mysql -y &>> "$LOGFILE"
 
 if [ $? -eq 0 ]
 then 
