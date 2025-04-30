@@ -15,7 +15,7 @@ then
 else
     echo -e "$G your root user$N"
 fi
-yum install mysql -y &>> /temp/temp.log
+yum install mysql -y
 
 if [ $? -eq 0 ]
 then 
