@@ -5,6 +5,7 @@ ID=$(id -u)
 R="\e[31m"
 G="\e[32m"
 N="\e[0m"
+Y="\e[33m"
 
 TIMESTAMP=$(date +%F-%H-%M-%S)
 LOGFILE="/tmp/$0-$TIMESTAMP.log"
@@ -35,7 +36,11 @@ do
     then
         yum install $package -y
         VALIDATE $? "Installation of $package"
+    else
+        echo -e "$package is $Y allready installed $N"
+    fi
 done
+
 
 
 
