@@ -26,7 +26,7 @@ else
     echo -e "YOU ARE $G ROOT USER $N"
 fi
 
-yum install mysql -y &>> $LOGFILE
+yum install dd -y &>> $LOGFILE
 
 VALIDATE
 
