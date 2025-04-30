@@ -3,7 +3,7 @@
 ID=$(id -u)
 
 TIMESTAMP=$(TZ=IST-5:30 date +'%d/%m/%y %T %Z')
-LOGFILE="/TEMP/$0-$TIMESTAMP.log"
+LOGFILE="/tmp/$0-$TIMESTAMP.log"
 
 R="\e[31m"
 G="\e[32m"
@@ -17,6 +17,7 @@ then
 else
     echo -e "$G your root user$N"
 fi
+
 yum install mysql -y &>> $LOGFILE
 
 if [ $? -eq 0 ]
