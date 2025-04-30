@@ -8,6 +8,9 @@ N="\e[0m"
 
 TIMESTAMP=$(date +%F-%H-%M-%S)
 LOGFILE="/tmp/$0-$TIMESTAMP.log"
+
+echo -e "$G Script Started Executing at $TIMESTAMP $N" &>> $LOGFILE
+
 VALIDATE() {
         if [ $1 -ne 0 ]
         then 
