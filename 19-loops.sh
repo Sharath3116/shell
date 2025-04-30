@@ -1,4 +1,4 @@
-$!/bin/bash
+#!/bin/bash
 
 #colour code
 ID=$(id -u)
