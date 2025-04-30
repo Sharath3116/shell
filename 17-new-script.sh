@@ -2,9 +2,8 @@
 
 ID=$(id -u)
 
-SCRIPTNAME=$(basename "$0")
-TIMESTAMP=$(date +'%d-%m-%Y_%H-%M-%S')
-LOGFILE="/tmp/${SCRIPTNAME}-${TIMESTAMP}.log"
+TIMESTAMP=$(date +%F-%H-%M-%S)
+LOGFILE="/tmp/$0-$TIMESTAMP.log"
 
 R="\e[31m"
 G="\e[32m"
@@ -17,7 +16,8 @@ then
 else
     echo -e "$G your are root user$N"
 fi
-yum install mysql -y &>> "$LOGFILE"
+
+yum install mysql -y &>> $LOGFILE
 
 if [ $? -eq 0 ]
 then 
