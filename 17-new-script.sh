@@ -4,6 +4,8 @@ ID=$(id -u)
 
 TIMESTAMP=$(TZ=IST-5:30 date +'%d/%m/%y %T %Z')
 
+echo "$TIMESTAMP"
+
 R="\e[31m"
 G="\e[32m"
 N="\e[0m"
