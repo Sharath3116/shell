@@ -1,4 +1,4 @@
-#!/bin/bahs
+#!/bin/bash
 
 ID=$(id -u)
 
