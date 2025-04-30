@@ -10,7 +10,7 @@ G="\e[32m"
 N="\e[0m"
 
 VALIDATE(){
-        if [ $1 -eq 0 ]
+        if [ $1 - 0 ]
         then 
             echo -e "$1 install is $G SUCESS $N"
         else    
